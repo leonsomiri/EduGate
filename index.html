@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Edugate Academy | تواصل معنا</title>
-  <meta name="description" content="أكاديمية Edugate للتعليم والتأسيس - حصص فردية 1:1 داخل السعودية" />
+  <meta name="description" content="أكاديمية Edugate للتعليم والتأسيس - حصص فردية 1:1" />
 
   <style>
     :root{
@@ -24,7 +24,6 @@
       background:var(--bg);
       color:var(--text);
     }
-    a{color:inherit}
     .wrap{max-width:880px;margin:0 auto;padding:22px}
     .hero{
       background:linear-gradient(135deg, rgba(31,58,99,.08), rgba(37,211,102,.10));
@@ -34,15 +33,8 @@
       position:relative;
       overflow:hidden;
     }
-    .topbar{
-      display:flex;
-      align-items:flex-start;
-      gap:16px;
-      justify-content:space-between;
-      flex-wrap:wrap;
-    }
 
-    /* شعار أعلى اليسار (مع RTL) */
+    /* شعار أعلى اليسار */
     .logoBox{
       position:absolute;
       left:18px;
@@ -67,7 +59,6 @@
 
     .title{
       padding-left:110px; /* مساحة للشعار على اليسار */
-      padding-right:0;
     }
     h1{margin:0 0 10px;font-size:30px;line-height:1.3}
     .sub{margin:0;color:var(--muted);font-size:16px;line-height:1.9}
@@ -96,15 +87,6 @@
       align-items:center;
       gap:10px;
     }
-    .badge{
-      font-size:13px;
-      padding:6px 10px;
-      border-radius:999px;
-      background:rgba(31,58,99,.10);
-      color:var(--brand);
-      font-weight:700;
-      border:1px solid rgba(31,58,99,.18);
-    }
     ul{margin:0;padding:0 18px;line-height:2;color:var(--text)}
     .muted{color:var(--muted)}
     .offer{
@@ -125,7 +107,6 @@
       display:flex;
       align-items:center;
       justify-content:center;
-      gap:10px;
       text-decoration:none;
       padding:14px 16px;
       border-radius:14px;
@@ -135,7 +116,6 @@
       font-size:18px;
       border:1px solid rgba(0,0,0,.06);
     }
-    .btn small{display:block;font-weight:600;opacity:.9}
     .btn:active{transform:translateY(1px)}
     .mini{
       font-size:13px;
@@ -163,7 +143,7 @@
 <body>
   <div class="wrap">
     <section class="hero">
-      <!-- ضع شعارك باسم logo.png بجانب index.html -->
+      <!-- ارفع شعارك باسم logo.png بجانب index.html -->
       <div class="logoBox">
         <img src="logo.png" alt="Edugate Academy Logo" />
       </div>
@@ -171,34 +151,23 @@
       <div class="title">
         <h1>أكاديمية Edugate للتعليم والتأسيس</h1>
         <p class="sub">
-          حصص فردية (طالب + معلم) في جميع المواد الدراسية لكل المراحل والأنظمة التعليمية المعتمدة داخل السعودية — بمتابعة دقيقة ونتائج ملموسة.
+          حصص فردية (طالب + معلم) في جميع المواد الدراسية لكل المراحل
         </p>
       </div>
 
       <div class="grid">
         <div class="card">
-          <h2>لماذا نحن؟ <span class="badge">1:1</span></h2>
+          <h2>لماذا نحن؟</h2>
           <ul>
-            <li>✅ شرح فردي 1:1 يناسب مستوى الطالب ويعالج نقاط الضعف بسرعة</li>
-            <li>✅ مدرّسون مهرة من أنحاء العالم بخبرة طويلة وفيدباك ممتاز</li>
-            <li>✅ متابعة الدروس والواجبات وخطة مذاكرة واضحة</li>
+            <li>✅ شرح فردي 1:1 يناسب مستوى الطالب ويعالج نقاط الضعف</li>
+            <li>✅ مدرّسون مهرة من أنحاء العالم</li>
+            <li>✅ متابعة الدروس والواجبات</li>
             <li>✅ تأسيس قوي في اللغة والرياضيات لكل الأعمار</li>
-            <li>✅ مناسب لجميع المراحل: ابتدائي / متوسط / ثانوي + دعم للتأسيس</li>
           </ul>
 
           <div class="divider"></div>
 
-          <h2>خدماتنا</h2>
-          <ul class="muted">
-            <li>📌 دروس رياضيات، علوم، فيزياء، كيمياء، أحياء</li>
-            <li>📌 لغة عربية، لغة إنجليزية + تأسيس لغوي</li>
-            <li>📌 تأسيس رياضيات لكل الأعمار</li>
-            <li>📌 متابعة أسبوعية وتقييم مستوى (حسب حاجة الطالب)</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h2>عروضنا الحالية <span class="badge">🎁</span></h2>
+          <h2>عروضنا الحالية</h2>
           <div class="offer">
             <p style="margin:0;line-height:1.9">
               🎁 تقييم مجاني لمستوى الطالب<br>
@@ -206,32 +175,32 @@
             </p>
           </div>
 
-          <div class="divider"></div>
+          <p class="muted" style="margin:12px 0 0;line-height:1.9">
+            هدفنا تبدأ تجربة بسيطة وتشوف الفرق بنفسك.
+          </p>
+        </div>
 
+        <div class="card">
           <h2>كيف نبدأ؟</h2>
           <p class="muted" style="margin:0 0 10px;line-height:1.9">
-            تواصل معنا على واتساب وأرسل المعلومات التالية:
+            تواصل معنا على واتساب<br>
+            ارسل المعلومات التالية:
           </p>
 
           <div class="kvs">
-            <div class="kv"><b>1) عمر الطالب</b><span class="muted">مثال: 10 سنوات</span></div>
-            <div class="kv"><b>2) المادة المطلوبة</b><span class="muted">رياضيات / إنجليزي / كيمياء…</span></div>
+            <div class="kv"><b>عمر الطالب</b></div>
+            <div class="kv"><b>المادة المطلوبة</b></div>
           </div>
 
-          <p class="muted" style="margin:10px 0 0;line-height:1.9">
-            نرشّح لك المعلم المناسب ونرتّب أول حصة.
-          </p>
-
           <div class="cta">
-            <!-- رقمك بصيغة دولية بدون 00 -->
             <a class="btn"
-               href="https://wa.me/201040452305?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%AD%D8%AC%D8%B2%20%D8%AD%D8%B5%D8%A9%20%D9%84%D9%84%D8%B7%D8%A7%D9%84%D8%A8.%0A%D8%B9%D9%85%D8%B1%20%D8%A7%D9%84%D8%B7%D8%A7%D9%84%D8%A8%3A%20%0A%D8%A7%D9%84%D9%85%D8%A7%D8%AF%D8%A9%3A%20"
+               href="https://wa.me/201040452305?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AD%D8%B5%D8%B5%20Edugate.%0A%D8%B9%D9%85%D8%B1%20%D8%A7%D9%84%D8%B7%D8%A7%D9%84%D8%A8%3A%20%0A%D8%A7%D9%84%D9%85%D8%A7%D8%AF%D8%A9%3A%20"
                target="_blank" rel="noopener">
               تواصل عبر واتساب الآن
             </a>
 
             <div class="mini">
-              *  إذا لم يفتح واتساب تلقائيًا، افتح الرابط من المتصفح أو تأكد من تثبيت التطبيق على جهازك.
+              * إذا لم يفتح واتساب تلقائيًا، افتح الرابط من المتصفح أو تأكد من تثبيت التطبيق.
             </div>
           </div>
         </div>
@@ -244,4 +213,3 @@
   </div>
 </body>
 </html>
-
