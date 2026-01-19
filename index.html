@@ -3,17 +3,18 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Edugate Academy | واتساب</title>
-  <meta name="description" content="أكاديمية Edugate للتعليم والتأسيس - تواصل عبر واتساب" />
+  <title>Edugate Academy | تواصل</title>
+  <meta name="description" content="أكاديمية Edugate للتعليم والتأسيس - حصص فردية 1:1" />
 
   <style>
     :root{
       --bg:#f6f7fb;
+      --card:#ffffff;
       --text:#0f172a;
       --muted:#475569;
       --accent:#25D366;
       --shadow:0 14px 40px rgba(2,6,23,.10);
-      --radius:22px;
+      --radius:18px;
     }
     *{box-sizing:border-box}
     body{
@@ -22,6 +23,7 @@
       background:var(--bg);
       color:var(--text);
     }
+
     .screen{
       min-height:100svh;
       display:flex;
@@ -29,16 +31,16 @@
       justify-content:center;
       padding:14px;
     }
+
     .card{
-      width:min(560px, 100%);
+      width:min(720px, 100%);
       background:linear-gradient(135deg, rgba(15,23,42,.04), rgba(37,211,102,.10));
-      border-radius:var(--radius);
+      border-radius:22px;
       box-shadow:var(--shadow);
       border:1px solid rgba(15,23,42,.06);
       padding:18px 16px 16px;
       position:relative;
       overflow:hidden;
-      text-align:right;
     }
 
     /* شعار أعلى اليسار */
@@ -64,19 +66,45 @@
     h1{margin:0 0 8px;font-size:22px;line-height:1.35}
     .sub{margin:0;color:var(--muted);font-size:14px;line-height:1.8}
 
-    .btn{
-      margin-top:14px;
+    .section{
+      margin-top:12px;
+      background:rgba(255,255,255,.85);
+      border:1px solid rgba(15,23,42,.06);
+      border-radius:18px;
+      padding:14px;
+    }
+    .section h2{margin:0 0 10px;font-size:18px}
+    ul{margin:0;padding:0 18px;line-height:2;color:var(--text)}
+    .offer{
+      margin-top:10px;
+      background:rgba(37,211,102,.10);
+      border:1px solid rgba(37,211,102,.25);
+      padding:10px 12px;
+      border-radius:14px;
+      line-height:1.9;
+    }
+    .muted{color:var(--muted);line-height:1.9;margin:10px 0 0}
+
+    /* زر واتساب صغير */
+    .btnWrap{
+      margin-top:12px;
       display:flex;
+      justify-content:center; /* وسط */
+    }
+    .btn{
+      display:inline-flex;
       align-items:center;
       justify-content:center;
       text-decoration:none;
-      padding:14px 16px;
-      border-radius:16px;
+      padding:10px 14px;       /* أصغر */
+      border-radius:999px;      /* كبسولة */
       font-weight:900;
       background:var(--accent);
       color:#0b2b16;
-      font-size:18px;
+      font-size:14px;           /* أصغر */
       border:1px solid rgba(0,0,0,.06);
+      white-space:nowrap;
+      gap:8px;
     }
     .btn:active{transform:translateY(1px)}
     .note{
@@ -108,11 +136,31 @@
         <p class="sub">حصص فردية (طالب + معلم) في جميع المواد الدراسية لكل المراحل</p>
       </div>
 
-      <a class="btn"
-         href="https://wa.me/201040452305?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%AA%D8%B3%D8%AC%D9%8A%D9%84%20%D9%81%D9%8A%20%D8%AD%D8%B5%D8%B5%20Edugate.%0A%D8%B9%D9%85%D8%B1%20%D8%A7%D9%84%D8%B7%D8%A7%D9%84%D8%A8%3A%20%0A%D8%A7%D9%84%D9%85%D8%A7%D8%AF%D8%A9%3A%20"
-         target="_blank" rel="noopener">
-        تواصل عبر واتساب الآن
-      </a>
+      <div class="section">
+        <h2>لماذا نحن؟</h2>
+        <ul>
+          <li>✅ شرح فردي 1:1 يناسب مستوى الطالب ويعالج نقاط الضعف</li>
+          <li>✅ مدرّسون مهرة من أنحاء العالم</li>
+          <li>✅ متابعة الدروس والواجبات</li>
+          <li>✅ تأسيس قوي في اللغة والرياضيات لكل الأعمار</li>
+        </ul>
+
+        <h2 style="margin-top:14px">عروضنا الحالية</h2>
+        <div class="offer">
+          🎁 تقييم مجاني لمستوى الطالب<br>
+          💡 الحصة الأولى بسعر رمزي: <b>10 ريال</b> فقط
+        </div>
+
+        <p class="muted">هدفنا تبدأ تجربة بسيطة وتشوف الفرق بنفسك.</p>
+
+        <div class="btnWrap">
+          <a class="btn"
+             href="https://wa.me/201040452305?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AD%D8%B5%D8%B5%20Edugate."
+             target="_blank" rel="noopener">
+            تواصل واتساب
+          </a>
+        </div>
+      </div>
 
       <div class="note">
         * إذا لم يفتح واتساب تلقائيًا، افتح الرابط من المتصفح أو تأكد من تثبيت التطبيق.
