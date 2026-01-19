@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Edugate Academy | ابدأ الآن</title>
+  <meta name="description" content="كيف نبدأ؟ تواصل معنا على واتساب" />
+
+  <style>
+    :root{
+      --bg:#f6f7fb;
+      --text:#0f172a;
+      --muted:#475569;
+      --accent:#25D366;
+      --shadow:0 14px 40px rgba(2,6,23,.10);
+      --radius:22px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Tahoma,Arial;background:var(--bg);color:var(--text)}
+    .screen{min-height:100svh;display:flex;align-items:center;justify-content:center;padding:14px}
+    .card{
+      width:min(560px, 100%);
+      background:#fff;
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      border:1px solid rgba(15,23,42,.06);
+      padding:16px;
+      position:relative;
+      overflow:hidden;
+    }
+    .logoRow{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+    .logo{
+      width:54px;height:54px;border-radius:16px;background:rgba(15,23,42,.03);
+      border:1px solid rgba(15,23,42,.08);display:flex;align-items:center;justify-content:center;
+    }
+    .logo img{width:44px;height:44px;object-fit:contain;display:block}
+    h1{margin:0;font-size:20px;line-height:1.35}
+    .sub{margin:6px 0 0;color:var(--muted);font-size:14px;line-height:1.8}
+
+    .box{
+      margin-top:12px;
+      background:rgba(15,23,42,.03);
+      border:1px solid rgba(15,23,42,.06);
+      border-radius:18px;
+      padding:14px;
+    }
+    .box h2{margin:0 0 8px;font-size:18px}
+    ul{margin:0;padding:0 18px;line-height:2}
+    .muted{color:var(--muted);line-height:1.8}
+
+    .btn{
+      margin-top:12px;
+      display:flex;align-items:center;justify-content:center;
+      text-decoration:none;
+      padding:14px 16px;border-radius:16px;
+      font-weight:900;background:var(--accent);color:#0b2b16;font-size:18px;
+      border:1px solid rgba(0,0,0,.06);
+    }
+    .row{display:flex;gap:10px;margin-top:10px}
+    .ghost{
+      flex:1;
+      display:flex;align-items:center;justify-content:center;
+      text-decoration:none;
+      padding:12px 14px;border-radius:16px;
+      font-weight:900;background:#fff;color:var(--text);
+      border:1px solid rgba(15,23,42,.12);
+    }
+    .footer{margin-top:10px;font-size:12px;color:#64748b;text-align:center}
+  </style>
+</head>
+
+<body>
+  <div class="screen">
+    <div class="card">
+      <div class="logoRow">
+        <div class="logo"><img src="logo.png" alt="Edugate Academy Logo"></div>
+        <div>
+          <h1>ابدأ الآن</h1>
+          <p class="sub">تواصل معنا على واتساب وأرسل المعلومات التالية.</p>
+        </div>
+      </div>
+
+      <div class="box">
+        <h2>كيف نبدأ؟</h2>
+        <p class="muted" style="margin:0 0 8px">
+          تواصل معنا على واتساب<br>
+          ارسل المعلومات التالية:
+        </p>
+        <ul>
+          <li><b>عمر الطالب</b></li>
+          <li><b>المادة المطلوبة</b></li>
+        </ul>
+        <p class="muted" style="margin:10px 0 0">
+          نرشّح لك المعلم المناسب ونرتّب أول حصة.
+        </p>
+
+        <a class="btn"
+           href="https://wa.me/201040452305?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%AA%D8%B3%D8%AC%D9%8A%D9%84%20%D9%81%D9%8A%20%D8%AD%D8%B5%D8%B5%20Edugate.%0A%D8%B9%D9%85%D8%B1%20%D8%A7%D9%84%D8%B7%D8%A7%D9%84%D8%A8%3A%20%0A%D8%A7%D9%84%D9%85%D8%A7%D8%AF%D8%A9%3A%20"
+           target="_blank" rel="noopener">
+          تواصل عبر واتساب الآن
+        </a>
+
+        <div class="row">
+          <a class="ghost" href="index.html">رجوع</a>
+        </div>
+      </div>
+
+      <div class="footer">© Edugate Academy</div>
+    </div>
+  </div>
+</body>
+</html>
