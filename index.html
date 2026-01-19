@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Edugate Academy | تواصل معنا</title>
+  <meta name="description" content="أكاديمية Edugate للتعليم والتأسيس - حصص فردية 1:1 داخل السعودية" />
+
+  <style>
+    :root{
+      --bg:#f6f7fb;
+      --card:#ffffff;
+      --text:#0f172a;
+      --muted:#475569;
+      --brand:#1f3a63;
+      --accent:#25D366;
+      --shadow:0 14px 40px rgba(2,6,23,.10);
+      --radius:18px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui,-apple-system,"Segoe UI",Roboto,Tahoma,Arial;
+      background:var(--bg);
+      color:var(--text);
+    }
+    a{color:inherit}
+    .wrap{max-width:880px;margin:0 auto;padding:22px}
+    .hero{
+      background:linear-gradient(135deg, rgba(31,58,99,.08), rgba(37,211,102,.10));
+      border-radius:var(--radius);
+      padding:22px;
+      box-shadow:var(--shadow);
+      position:relative;
+      overflow:hidden;
+    }
+    .topbar{
+      display:flex;
+      align-items:flex-start;
+      gap:16px;
+      justify-content:space-between;
+      flex-wrap:wrap;
+    }
+
+    /* شعار أعلى اليسار (مع RTL) */
+    .logoBox{
+      position:absolute;
+      left:18px;
+      top:18px;
+      width:84px;
+      height:84px;
+      border-radius:16px;
+      background:rgba(255,255,255,.75);
+      backdrop-filter: blur(6px);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      box-shadow:0 10px 22px rgba(2,6,23,.12);
+      border:1px solid rgba(15,23,42,.08);
+    }
+    .logoBox img{
+      width:72px;
+      height:72px;
+      object-fit:contain;
+      display:block;
+    }
+
+    .title{
+      padding-left:110px; /* مساحة للشعار على اليسار */
+      padding-right:0;
+    }
+    h1{margin:0 0 10px;font-size:30px;line-height:1.3}
+    .sub{margin:0;color:var(--muted);font-size:16px;line-height:1.9}
+
+    .grid{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:14px;
+      margin-top:16px;
+    }
+    @media(min-width:860px){
+      .grid{grid-template-columns: 1.1fr .9fr;}
+    }
+
+    .card{
+      background:var(--card);
+      border-radius:var(--radius);
+      padding:18px 18px 16px;
+      box-shadow:0 12px 30px rgba(2,6,23,.08);
+      border:1px solid rgba(15,23,42,.06);
+    }
+    .card h2{
+      margin:0 0 10px;
+      font-size:22px;
+      display:flex;
+      align-items:center;
+      gap:10px;
+    }
+    .badge{
+      font-size:13px;
+      padding:6px 10px;
+      border-radius:999px;
+      background:rgba(31,58,99,.10);
+      color:var(--brand);
+      font-weight:700;
+      border:1px solid rgba(31,58,99,.18);
+    }
+    ul{margin:0;padding:0 18px;line-height:2;color:var(--text)}
+    .muted{color:var(--muted)}
+    .offer{
+      background:rgba(37,211,102,.10);
+      border:1px solid rgba(37,211,102,.25);
+      padding:12px 14px;
+      border-radius:14px;
+      margin-top:10px;
+    }
+
+    .cta{
+      margin-top:12px;
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+    }
+    .btn{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      text-decoration:none;
+      padding:14px 16px;
+      border-radius:14px;
+      font-weight:900;
+      background:var(--accent);
+      color:#0b2b16;
+      font-size:18px;
+      border:1px solid rgba(0,0,0,.06);
+    }
+    .btn small{display:block;font-weight:600;opacity:.9}
+    .btn:active{transform:translateY(1px)}
+    .mini{
+      font-size:13px;
+      color:var(--muted);
+      line-height:1.7;
+    }
+    .footer{
+      margin-top:14px;
+      font-size:12px;
+      color:#64748b;
+      text-align:center;
+    }
+    .divider{height:1px;background:rgba(15,23,42,.08);margin:12px 0}
+    .kvs{display:grid;grid-template-columns:1fr;gap:10px}
+    .kv{
+      background:rgba(15,23,42,.03);
+      border:1px solid rgba(15,23,42,.06);
+      border-radius:14px;
+      padding:12px 12px;
+    }
+    .kv b{display:block;margin-bottom:6px}
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <!-- ضع شعارك باسم logo.png بجانب index.html -->
+      <div class="logoBox">
+        <img src="logo.png" alt="Edugate Academy Logo" />
+      </div>
+
+      <div class="title">
+        <h1>أكاديمية Edugate للتعليم والتأسيس</h1>
+        <p class="sub">
+          حصص فردية (طالب + معلم) في جميع المواد الدراسية لكل المراحل والأنظمة التعليمية المعتمدة داخل السعودية — بمتابعة دقيقة ونتائج ملموسة.
+        </p>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <h2>لماذا نحن؟ <span class="badge">1:1</span></h2>
+          <ul>
+            <li>✅ شرح فردي 1:1 يناسب مستوى الطالب ويعالج نقاط الضعف بسرعة</li>
+            <li>✅ مدرّسون مهرة من أنحاء العالم بخبرة طويلة وفيدباك ممتاز</li>
+            <li>✅ متابعة الدروس والواجبات وخطة مذاكرة واضحة</li>
+            <li>✅ تأسيس قوي في اللغة والرياضيات لكل الأعمار</li>
+            <li>✅ مناسب لجميع المراحل: ابتدائي / متوسط / ثانوي + دعم للتأسيس</li>
+          </ul>
+
+          <div class="divider"></div>
+
+          <h2>خدماتنا</h2>
+          <ul class="muted">
+            <li>📌 دروس رياضيات، علوم، فيزياء، كيمياء، أحياء</li>
+            <li>📌 لغة عربية، لغة إنجليزية + تأسيس لغوي</li>
+            <li>📌 تأسيس رياضيات لكل الأعمار</li>
+            <li>📌 متابعة أسبوعية وتقييم مستوى (حسب حاجة الطالب)</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2>عروضنا الحالية <span class="badge">🎁</span></h2>
+          <div class="offer">
+            <p style="margin:0;line-height:1.9">
+              🎁 تقييم مجاني لمستوى الطالب<br>
+              💡 الحصة الأولى بسعر رمزي: <b>10 ريال</b> فقط
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <h2>كيف نبدأ؟</h2>
+          <p class="muted" style="margin:0 0 10px;line-height:1.9">
+            تواصل معنا على واتساب وأرسل المعلومات التالية:
+          </p>
+
+          <div class="kvs">
+            <div class="kv"><b>1) عمر الطالب</b><span class="muted">مثال: 10 سنوات</span></div>
+            <div class="kv"><b>2) المادة المطلوبة</b><span class="muted">رياضيات / إنجليزي / كيمياء…</span></div>
+          </div>
+
+          <p class="muted" style="margin:10px 0 0;line-height:1.9">
+            نرشّح لك المعلم المناسب ونرتّب أول حصة.
+          </p>
+
+          <div class="cta">
+            <!-- رقمك بصيغة دولية بدون 00 -->
+            <a class="btn"
+               href="https://wa.me/201040452305?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%AD%D8%AC%D8%B2%20%D8%AD%D8%B5%D8%A9%20%D9%84%D9%84%D8%B7%D8%A7%D9%84%D8%A8.%0A%D8%B9%D9%85%D8%B1%20%D8%A7%D9%84%D8%B7%D8%A7%D9%84%D8%A8%3A%20%0A%D8%A7%D9%84%D9%85%D8%A7%D8%AF%D8%A9%3A%20"
+               target="_blank" rel="noopener">
+              تواصل عبر واتساب الآن
+            </a>
+
+            <div class="mini">
+              * إذا لم يفتح واتساب تلقائيًا، افتح الرابط من المتصفح أو تأكد من تثبيت التطبيق.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        © Edugate Academy — جميع الحقوق محفوظة
+      </div>
+    </section>
+  </div>
+</body>
+</html>
